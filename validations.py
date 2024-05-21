@@ -19,8 +19,8 @@ def is_date(value):
 
 def is_address(value):
     # Патерн для перевірки адреси, яка містить країну, місто, вулицю, номер будинку та номер квартири (опційно)
-    pattern = r"Country: [A-Za-z]+, City: [A-Za-z]+, Street: [A-Za-z0-9\s]+, House Number: \d+, Apartment Number: \d*"
-    return bool(re.match(pattern, value))
+  pattern = r"Country: [A-Za-z]+, City: [A-Za-z]+, Street: [A-Za-z0-9\s]+, House Number: \d+, Apartment Number: \d*"
+  return bool(re.match(pattern, value))
 
 
                                                              # Усі наступні записи зроблені виключно для перевірки Самого себе
