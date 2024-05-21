@@ -14,6 +14,7 @@ def is_uuid(uuid_string):
 def is_date(value):
     match = re.search(r"^\d{4}\.\d{2}.\d{2}$", value)
     return bool(match)
+
 # Додаємо перевірку відповідності введеної адреси
 
 def is_address(value):
