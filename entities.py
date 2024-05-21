@@ -161,7 +161,7 @@ class AddressBook:
 
           return result_records                      # КІНЕЦЬ КОДУ ДЛЯ ОБРОБКИ НАБЛИЖЕНИХ ДНІВ НАРОДЖЕННЯ
 
-class Address(Field):                                        # Створено новий клас по додаванню Адресів.
+class Address(Field):                                        # A-1 Створено новий клас по додаванню Адресів.
     def __init__(self, country=None, city=None, street=None, house_number=None, apartment_number=None):
         super().__init__()
         self.set_field_name("Address")

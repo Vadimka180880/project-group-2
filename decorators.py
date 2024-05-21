@@ -93,7 +93,7 @@ def show_birthday_validation(func):
 
   return inner
 
-def add_address_validation(func):
+def add_address_validation(func):                         # A-1 Доданий деоратор
   def inner(*args, **kwargs):
     try:
       payload = args[0]

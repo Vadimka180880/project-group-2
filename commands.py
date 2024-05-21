@@ -30,9 +30,9 @@ List app commands:
   7. "~$/get_phone [name<str>]" - get phone by user name
   8. "~$/add_birthday [id<UUID>] [date<Date>]" - add birthday to user. date format: "YYYY.MM.DD"
   9. "~$/show_birthday [name<str>]" - show birthday by name
-  10."~$/birthdays" - show all upcoming birthdays
+  10."~$/birthdays" - show all upcoming birthdays 
   11."~$/add_address" - added new address to contacts Example->->-> "Country: Ukraine, City: Kiyv, Street: Hreschatyk, House Number: 45, Apartment Number: 1"
-""" 
+"""                                         # A-1  Додана команда додавання ареси у список команд
   print(help_str)
 
 def hello():
@@ -106,7 +106,7 @@ def birthdays():
 
 from validations import is_address
 
-@add_address_validation
+@add_address_validation                 # A-1  Додано додавання адреси 
 def add_address(payload):
     address = payload[0]
     if is_address(address):    
